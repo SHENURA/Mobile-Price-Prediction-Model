@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Brand Name</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="">
+	<h2>RAM (GB)</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">4</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">8</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">16</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">32</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Storage (GB)</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bath-1">32</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bath-2">64</label>
+		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+		<label for="radio-bath-3">128</label>
+		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+		<label for="radio-bath-4">256</label>
+	</div>
+		<h2>Display (in)</h2>
+	<div>
+		<select class="location" name="" id="uiLocations">
+			<option value="" disabled="disabled" selected="selected">Choose display size</option>
+				<option>5.6</option>
+				<option>5.9</option>
+				<option>6.3</option>
+				<option>6.5</option>
+		  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	
+</body>
+</html>
